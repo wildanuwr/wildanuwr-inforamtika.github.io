@@ -52,7 +52,8 @@ section h2 {
 .logoti{
     height: 50px;
     width: 50px;
-    margin-left: -70px;
+    margin-left: -30px;
+    position: absolute;
 }
 span {
     color: #fffb09;
@@ -635,4 +636,5 @@ footer ul li a:hover {
         justify-content: center;
     }
 }
+
 /* =======ANGGOTA EDIT MAIN JS======= */
