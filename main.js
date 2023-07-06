@@ -47,4 +47,13 @@ const closeNav = () => {
     menuBtn.style.display = "inline-block";
 }
 
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
 closeBtn.addEventListener('click', closeNav);
