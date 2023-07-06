@@ -54,6 +54,9 @@ section h2 {
     width: 50px;
     margin-left: -70px;
 }
+span {
+    color: #fffb09;
+}
 
 h1, 
 h2, 
@@ -77,14 +80,13 @@ h3 {
 
 h4 {
     font-size: 1.3rem;
-    margin-left: -95%;
-    position: relative;
 
 }
 
 a {
     color: var(--color-white);
 }
+
 
 img { 
  width: 100%;
