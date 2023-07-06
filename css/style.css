@@ -49,6 +49,12 @@ section h2 {
     margin-bottom: 4rem;
 }
 
+.logoti{
+    height: 50px;
+    width: 50px;
+    margin-left: -70px;
+}
+
 h1, 
 h2, 
 h3, 
@@ -71,6 +77,9 @@ h3 {
 
 h4 {
     font-size: 1.3rem;
+    margin-left: -95%;
+    position: relative;
+
 }
 
 a {
@@ -438,6 +447,7 @@ footer ul li a:hover {
 
     h4 {
         font-size: 1.2rem;
+        margin-left: ;
     }
 
     /* =================================NAVBAR============================ */
