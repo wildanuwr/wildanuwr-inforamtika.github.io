@@ -101,6 +101,7 @@ display: block;
     color: var(--color-black);
     padding: 1rem 2rem;
     border: 1px solid transparent;
+    border-radius: 10px;
     font-weight: 500;
     transition: var(--transition);
 }
@@ -692,7 +693,7 @@ footer ul li a:hover {
  input[type="submit"] {
     width: 100%;
     padding: 10px;
-    background-color: #d2e710e0;
+    background-color: #e7a310e0;
     border: none;
     outline: none;
     border-radius: 6px;
