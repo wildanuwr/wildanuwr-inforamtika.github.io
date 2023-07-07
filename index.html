@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Informatika unsia</title>
+    <link rel="icon" href="images/logoTI.ico" type="image/x-icon">
 
     <!----------------- fontawesome--------------- -->
     <script src="https://kit.fontawesome.com/d82b58315d.js" crossorigin="anonymous"></script>
@@ -25,14 +26,14 @@
     <!-- NAV -->
    <nav>
         <div class="container nav__container">
-            <img class="logoti" src="images/logoTI.png" alt="logo TI">
-            <div class="textheader">
-            <a href="index.html"><h4 style=" position: relative; margin-left: 10%;">INFORMATIKA UNSIA</h4></a>
+            <div class="logoti">
+            <img style="float: left;" src="images/logoTI.png" alt="logo TI">
+            <a href="index.html"><h4 style=" position: absolute; margin-left: 100%;">INFORMATIKA<br>UNSIA</h4></a>
             </div>
             <ul class="nav__menu">
                 <li><a href="index.html">Beranda</a></li>
                 <li><a href="about.html">Profil</a></li>
-                <li><a href="courses.html">LMS</a></li>
+                <li><a onclick="showLoginPopup()">LMS</a></li>
                 <li><a href="courses.html">E-Perpus</a></li>
                 <li><a href="contact.html">Kontak</a></li>
             </ul>
@@ -45,15 +46,36 @@
    <header>
         <div class="container header__container">
             <div class="header__left">
-                <h1><span>CERDAS BERSAMA</span> INFORMATIKA UNSIA</h1>
+                <h2><span>CERDAS BERSAMA</span> INFORMATIKA UNSIA</h2>
                 <p>
                     Program Studi Informatika telah menerima sertifikasi akreditasi dari Badan Akreditasi Nasional Perguruan Tinggi (BAN PT). Hasil ini didapatkan setelah BAN PT mengerluarkan Surat Keputusan Dewan Eksekutif BAN PT pada 26 Oktober 2022 dan telah memenuhi syarat Akreditasi B.
                 </p>
+                <!-- Login button -->
+  <button class="btn btn-primary" onclick="showLoginPopup()">LMS</button>
+
+  <!-- Login popup -->
+  <div id="loginPopup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="hideLoginPopup()">&times;</span>
+      <h3 style="text-align: center;">MASUK</h3>
+      <br>
+      <form>
+        <label for="username">NIM:</label>
+        <input type="text" id="username" name="username">
+        <br><br>
+        <label for="password">Kata Sandi:</label>
+        <input type="password" id="password" name="password">
+        <br><br>
+        <input type="submit" value="MASUK" onclick="login(event)">
+      </form>
+    </div>
+  </div>
             </div>
 
             <div class="header__right">
                 <div class="header__right-image">
-                    <img src="./images/unsia.jpg">
+                    <video width="524" height="338" src="VIdeo/unsia.mp4" loop autoplay ></video>
+                    <!-- <img src="./images/unsia.jpg"> -->
                 </div>
             </div>
         </div>
@@ -68,14 +90,13 @@
             <img src="./images/pemro.jpg">
         </div>
         <div class="course__info">
-            <h4>PEMROGRAMAN WEB I</h4>
+            <h4>PEMROGRAMAN WEB</h4>
              <P>&#10004;Pengenalan konsep pemrograman pada client & server web
                 <br>&#10004;HTML, CSS, dan responsive web design
                 <br>&#10004;Javascript: sintaks dasar, event handling, manipulasi DOM, object & class, JQuery
                 <br>&#10004;PHP: sintaks ,database server MySQL, object & class, cookies & session
                 <br>&#10004;Pengenalan cara instalasi web server dan setup domain
             </P>
-            <a href="courses.html" class="btn btn-primary">Learn More</a>
          </div>
     </article>
 
@@ -92,7 +113,6 @@
                  <br>&#10004; Kecerdasan Komputasional
                  <br>&#10004; Pengolahan Citra
             </P>
-            <a href="courses.html" class="btn btn-primary">Learn More</a>
         </div>
     </article>
 
@@ -109,18 +129,11 @@
                 <br> &#10004; Network Programming & Administration
                 <br> &#10004; Jaringan VOIP
              </P>
-            <a href="courses.html" class="btn btn-primary">Learn More</a>
          </div>
     </article>
    </div>
 </section>
 <!-- ------------------------------END OF COURSES------------------------------------------------------ -->
-
-
-
-
-
-
 
 <section class="faqs">
     <h2>PERTANYAAN YANG SERING DITANYAKAN</h2>

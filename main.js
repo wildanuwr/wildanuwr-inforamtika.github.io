@@ -55,5 +55,35 @@ var swiper = new Swiper(".mySwiper", {
       clickable: true,
     },
   });
+  // untuk login pop up
+  function showLoginPopup() {
+    var popup = document.getElementById("loginPopup");
+    popup.style.display = "block";
+    setTimeout(function() {
+      popup.style.opacity = "1";
+    }, 10);
+  }
 
+  // menyembunyikan login pop up
+  function hideLoginPopup() {
+    var popup = document.getElementById("loginPopup");
+    popup.style.opacity = "0";
+    setTimeout(function() {
+      popup.style.display = "none";
+    }, 300);
+  }
+
+  function login(event) {
+    event.preventDefault(); // Prevent form submission
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    
+    // login validation
+    if (username === "123456789" && password === "123456") {
+      hideLoginPopup();
+      window.location.href ="../courses.html";
+    } else {
+      alert("Username atau Kata Sandi Salah.");
+    }
+  }
 closeBtn.addEventListener('click', closeNav);

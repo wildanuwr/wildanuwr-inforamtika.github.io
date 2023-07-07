@@ -52,8 +52,8 @@ section h2 {
 .logoti{
     height: 50px;
     width: 50px;
-    margin-left: -30px;
-    position: absolute;
+    margin-left: 0%;
+    position: relative;
 }
 span {
     color: #fffb09;
@@ -637,4 +637,65 @@ footer ul li a:hover {
     }
 }
 
+ /* Popup container */
+ .popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(14, 12, 12, 0.616);
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Popup content */
+  .popup-content {
+    background: transparent;
+    border: 2px solid rgba(6, 62, 248, 0.514);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    margin: 100px auto;
+    padding: 50px;
+    border-radius: 10%;
+    width: 300px;
+  }
+  
+  /* Close button */
+  .close {
+    color: #aaa;
+    float: right;
+    margin-top: -25%;
+    margin-right: -15%;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Close button hover */
+  .close:hover {
+    color: #e4d7d7;
+  }
+ /* Input fields */
+ input[type="text"],
+ input[type="password"] {
+   width: 100%;
+   padding: 10px;
+   margin-bottom: 10px;
+   background: transparent;
+   border-bottom: 2px solid #f7c94b;
+   color: #c9eb0dcc;
+ }
+
+ input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #d2e710e0;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+ }
+ 
 /* =======ANGGOTA EDIT MAIN JS======= */
