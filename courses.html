@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informatika unsia</title>
+    <link rel="icon" href="images/logoTI.ico" type="image/x-icon">
+
+    <!----------------- fontawesome--------------- -->
+    <script src="https://kit.fontawesome.com/d82b58315d.js" crossorigin="anonymous"></script>
+
+    <!---------- google font (montserrat) ----------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+
+<!-- -----------SWIPER JS--------------------------- -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="./css/courses.css">
+<style>
+    .courses h2{
+        color: rgb(255, 255, 255);
+    }
+</style>
+</head>
+<body>
+    <!-- NAV -->
+   <nav>
+        <div class="container nav__container">
+            <div class="logoti">
+            <img style="float: left;" src="images/logoTI.png" alt="logo TI">
+            <a href="index.html"><h4 style=" position: absolute; margin-left: 100%;">INFORMATIKA<br>UNSIA</h4></a>
+            </div>
+            <ul class="nav__menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="about.html">Profil</a></li>
+                <li><a onclick="showLoginPopup()">LMS</a></li>
+                <li><a href="courses.html">E-Perpus</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            <button id="close-menu-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+   </nav> 
+   <!-- -----------NAV END-------------- -->
+
+   
+<!-- COURSES -->
+<section class="courses">
+    <h2>MATERI PEMBELAJARAN ONLINE</h2>
+   <div class="container courses__container">
+    <article class="course">
+        <div class="course__image">
+            <img src="./images/statistika.jpg">
+        </div>
+        <div class="course__info">
+             <h4>STATISTIKA DAN PROBABILITAS</h4>
+             <P>
+              "Statistika: Mengubah Data Menjadi Kisah Sukses, Menginspirasi Perubahan yang Lebih Baik"
+             </P>
+            <a href="courses.html" class="btn btn-primary">Baca</a>
+         </div>
+    </article>
+
+    <article class="course">
+        <div class="course__image">
+            <img src="./images/basis data.jpg">
+        </div>
+        <div class="course__info">
+             <h4>SISTEM BASIS DATA</h4><br>
+             <P>
+              "Mengorganisir, Mengoptimalkan, Menciptakan Keunggulan: Sistem Basis Data Mempercepat Prestasi"
+             </P>
+            <a href="courses.html" class="btn btn-primary">Baca</a>
+         </div>
+    </article>
+
+    <article class="course">
+        <div class="course__image">
+            <img src="./images/pemrograman web.jpg">
+        </div>
+        <div class="course__info">
+             <h4>PEMROGRAMAN WEB I</h4><br>
+             <P>
+                "Kode yang Menginspirasi, Tampilan yang Mengagumkan: Pemrograman Web Mengubah Ide menjadi Realitas Online"
+             </P>
+            <a href="courses.html" class="btn btn-primary">Baca</a>
+         </div>
+    </article>
+
+    <article class="course">
+        <div class="course__image">
+            <img src="./images/struktur data dan algoritma.jpg">
+        </div>
+        <div class="course__info">
+             <h4>STRUKTUR DATA DAN ALGORITMA</h4>
+             <P>
+                "Mengurai Kompleksitas, Merangkul Kemudahan: Struktur Data dan Algoritma Membuat Program Lebih Terstruktur"
+             </P>
+            <a href="courses.html" class="btn btn-primary">Baca</a>
+         </div>
+    </article>
+
+    <article class="course">
+        <div class="course__image">
+            <img src="./images/kalkulus.jpg">
+        </div>
+        <div class="course__info">
+             <h4>KALKULUS</h4><br>
+             <P>
+                "Mengukir Solusi dalam Bilangan: Kalkulus sebagai Alat Perhitungan Terbaik dalam Ilmu Matematika"
+             </P>
+            <a href="courses.html" class="btn btn-primary">Baca</a>
+         </div>
+    </article>
+
+    <article class="course">
+        <div class="course__image">
+            <img src="./images/panca.jpg">
+        </div>
+        <div class="course__info">
+             <h4>PENDIDIKAN PANCASILA</h4><br>
+             <P>
+                "Membentuk Warga Negara Berkualitas: Pendidikan Pancasila Memupuk Kesadaran Berbangsa dan Bernegara"
+             </P>
+            <a href="courses.html" class="btn btn-primary">Baca</a>
+         </div>
+    </article>
+
+    
+   </div>
+</section>
+<!-- ------------------------------END OF COURSES------------------------------------------------------ -->
+<!-- FOOTER -->
+
+<footer class="footer">
+    <div class="container footer__container">
+     <div class="footer__1">
+
+        <a href="index.html" class="footer__logo"><h4>UNIVERSITAS SIBER ASIA</h4></a>
+        <p>
+Universitas Siber Asia adalah Kampus dengan metode Full Online Learning pertama yang menerapkan pembelajaran daring (PJJ).
+        </p>
+     </div>
+
+     <div class="footer__2">
+        <h4>Layanan</h4>
+        <ul class="Permalinks">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="about.html">Profil</a></li>
+            <li><a href="courses.html">LMS</a></li>
+            <li><a href="courses.html">E-Perpus</a></li>
+            <li><a href="contact.html">Kontak</a></li>
+        </ul>
+     </div>
+     <div class="footer__4">
+        <h4>Contact Us</h4>
+        <div>
+           <p>Telp : (021) 278-061-89</p>
+<p>Email : prodi.informatika@mail.unsia.co.id</p>
+        </div>
+
+        <ul class="footer__socials">
+            <li>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+        </ul>
+     </div>
+     <div class="footer__2">
+        <h4>Lokasi</h4>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.735872857361!2d106.81819217485527!3d-6.298397593690734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ed1aea2566fd%3A0xa43a768fbbbd72af!2sUniversitas%20Siber%20Asia%20(UNSIA)!5e0!3m2!1sen!2sid!4v1688665295584!5m2!1sen!2sid" width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </div>
+    </div>
+    <div class="footer__copyright">
+        <small>Copyright &copy; KELOMPOK 7 </small>
+     </div>
+</footer>
+<!-- ------------------------------END OF Footer ------------------------------------------------------ -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="./main.js"></script>
+</body>
+</html>
