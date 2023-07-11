@@ -681,7 +681,9 @@ footer ul li a:hover {
   }
  /* Input fields */
  input[type="text"],
- input[type="password"] {
+ input[type="password"],
+ input[type="email"],
+ input[type="pesan"] {
    width: 100%;
    padding: 10px;
    margin-bottom: 10px;
@@ -698,5 +700,15 @@ footer ul li a:hover {
     outline: none;
     border-radius: 6px;
  }
- 
+ .fromkontak{
+    width: 50%;
+    margin: 10%;
+    margin-top: 10%;
+    position: relative;
+    
+ }
+ textarea {
+    width: 100%;
+    max-width: 150%;
+ }
 /* =======ANGGOTA EDIT MAIN JS======= */
