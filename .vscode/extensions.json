@@ -1,5 +1,6 @@
 {
-    "recommendations": [
-        "ritwickdey.liveserver"
-    ]
-}
+    "capabilities": {
+      "virtualWorkspaces": true | false
+    }
+  }
+  
