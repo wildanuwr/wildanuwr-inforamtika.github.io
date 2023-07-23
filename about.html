@@ -15,68 +15,51 @@
 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/about.css">
+
+    <!-- -----------SWIPER JS--------------------------- -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/login.css">
+
 </head>
 <body>
-   <nav>
+    <!-- --------------------------NAV------------------------------ -->
+    <nav>
         <div class="container nav__container">
-            <a href="index.html"><h4>E-LEARNING UNSIA</h4></a>
+            <div class="logoti">
+            <img style="float: left;" src="images/logoTI.png" alt="logo TI">
+            <a href="index.html"><h4 style=" position: absolute; margin-left: 100%;">INFORMATIKA<br>UNSIA</h4></a>
+            </div>
             <ul class="nav__menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="courses.html">Courses</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="about.html">Profil</a></li>
+                <li><a onclick="showLoginPopup()">LMS</a></li>
+                <li><a href="courses.html">E-Perpus</a></li>
+                <li><a href="contact.html">Kontak</a></li>
             </ul>
             <button id="open-menu-btn"><i class="fa-solid fa-bars"></i></button>
             <button id="close-menu-btn"><i class="fa-solid fa-xmark"></i></button>
         </div>
    </nav> 
    <!-- --------------------------NAV END------------------------------ -->
+
+   <!-- --------------------------PROFIL INFORMATIKA------------------------------ -->
     <section class="about__achievements">
         <div class="container about__achievements-container">
             <div class="about__achievements-left">
                 <img src="./images/selamat.jpg">
             </div>
-
             <div class="about__achievements-right">
-                <h1>Achievements</h1>
+                <h1>Profil PJJ Informatika</h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore dolores ea maxime totam, a deserunt mollitia aliquam omnis fugit sapiente vero placeat, magnam blanditiis minus quo molestiae praesentium nulla optio?
+                    Prodi PJJ Informatika Universitas Siber Asia memiliki body knowledge of information Technic yang tersusun atas perencanaan learning outcome sebagai bagian proses utama dalam menghasilkan outcome program dalam berupaya intensif untuk semakin mengokohkan jati dirinya dalam menghasilkan lulusan yang bermutu di bidang Data Science dan Network Specialist yang dapat diserap oleh stakeholder/user dan rekomendasi program outcome dan learning outcome dari APTIKOM (Asosiasi Pendidikan Tinggi Informatika dan Komputer), IAII (Ikatan Ahli Informatika Indonesia), Kominfo, serta dari Industri. Selanjutnya profil lulusan tersebut didefinisikan dan diturunkan menjadi rumusan capaian pembelajaran atau learning outcome. Learning Outcome tersebut memperhatikan program outcome dari Prodi Informatika sebagaimana dikhususkan pada bidang ilmu Data Science dan Network Specialist mengacu pada deskripsi di IEEE dan ACM. Sebagai uniqueness Prodi dan Universitas, Data Science dan Network Specialist, pendidikan berbasis karakter, integritas dan soft skill dipilih oleh Prodi PJJ Informatika sebagai penciri khas kurikulum.
                 </p>
-                <div class="achievements__cards">
-                    <article class="achievement__card">
-                        <span class="achievement__icon">
-                            <i class="fa-solid fa-video"></i>
-                        </span>
-                        <h3>150+</h3>
-                        <p>Video Pembelajaran</p>
-                    </article>
-
-                    <article class="achievement__card">
-                        <span class="achievement__icon">
-                            <i class="fa-solid fa-users"></i>
-                        </span>
-                        <h3>100+</h3>
-                        <p>Mahasiswa</p>
-                    </article>
-
-                    <article class="achievement__card">
-                        <span class="achievement__icon">
-                            <i class="fa-solid fa-award"></i>
-                        </span>
-                        <h3>50+</h3>
-                        <p>Penghargaan</p>
-                    </article>
                 </div>
             </div>
         </div>
     </section>
- <!-- -------------------------ACHIEVEMENT END------------------------------- -->
-
-
-
-
-
-
+ <!-- -------------------------PROFIL END------------------------------- -->
 
 
 
@@ -92,11 +75,6 @@
                     <h4>Ambros</h4>
                     <p>Expert Tutor</p>
                 </div>
-                <div class="team__member-socials">
-                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
             </article>
 
             <article class="team__member">
@@ -106,11 +84,6 @@
                 <div class="team__member-info">
                     <h4>Catur</h4>
                     <p>Expert Tutor</p>
-                </div>
-                <div class="team__member-socials">
-                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </article>
 
@@ -122,11 +95,6 @@
                     <h4>Humaini</h4>
                     <p>Expert Tutor</p>
                 </div>
-                <div class="team__member-socials">
-                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
             </article>
 
             <article class="team__member">
@@ -137,11 +105,6 @@
                     <h4>Dwi</h4>
                     <p>Expert Tutor</p>
                 </div>
-                <div class="team__member-socials">
-                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
             </article>
 
             <article class="team__member">
@@ -151,11 +114,6 @@
                 <div class="team__member-info">
                     <h4>Ambros</h4>
                     <p>Expert Tutor</p>
-                </div>
-                <div class="team__member-socials">
-                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </article>
         </div>
@@ -169,40 +127,32 @@
 
 
 
-
-   <footer class="footer">
+<!-- -------------------------FOOTER------------------------------- -->
+<footer class="footer">
     <div class="container footer__container">
      <div class="footer__1">
-        <a href="index.html" class="footer__logo"><h4>E-LEARNING UNSIA</h4></a>
+
+        <a href="index.html" class="footer__logo"><h4>UNIVERSITAS SIBER ASIA</h4></a>
         <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque laudantium sint maiores, dignissimos minus facilis.
+Universitas Siber Asia adalah Kampus dengan metode Full Online Learning pertama yang menerapkan pembelajaran daring (PJJ).
         </p>
      </div>
 
      <div class="footer__2">
-        <h4>Permalinks</h4>
+        <h4>Layanan</h4>
         <ul class="Permalinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="about.html">Profil</a></li>
+            <li><a href="courses.html">LMS</a></li>
+            <li><a href="courses.html">E-Perpus</a></li>
+            <li><a href="contact.html">Kontak</a></li>
         </ul>
      </div>
-
-     <div class="footer__3">
-        <h4>Primacy</h4>
-        <ul class="privacy">
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms and condition</a></li>
-            <li><a href="#">Report Policy</a></li>
-        </ul>
-     </div>
-
      <div class="footer__4">
         <h4>Contact Us</h4>
         <div>
-            <p>+62 858 943 13544</p>
-            <p>ElearningUnsia@gmail.com</p>
+           <p>Telp : (021) 278-061-89</p>
+<p>Email : prodi.informatika@mail.unsia.co.id</p>
         </div>
 
         <ul class="footer__socials">
@@ -220,16 +170,19 @@
             </li>
         </ul>
      </div>
-
- 
+     <div class="footer__2">
+        <h4>Lokasi</h4>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.735872857361!2d106.81819217485527!3d-6.298397593690734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ed1aea2566fd%3A0xa43a768fbbbd72af!2sUniversitas%20Siber%20Asia%20(UNSIA)!5e0!3m2!1sen!2sid!4v1688665295584!5m2!1sen!2sid" width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </div>
     </div>
     <div class="footer__copyright">
-        <small>Copyright &copy; E-LEARNING UNSIA </small>
+        <small>Copyright &copy; KELOMPOK 7 </small>
      </div>
 </footer>
-
-
+<!-- -------------------------footer end------------------------------- -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="./main.js"></script>
+
 
 
 </body>
