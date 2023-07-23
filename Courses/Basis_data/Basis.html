@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informatika unsia</title>
+    <link rel="icon" href="/images/logoTI.ico" type="image/x-icon">
+
+    <!----------------- fontawesome--------------- -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/view.js"></script>
+    <script src="https://kit.fontawesome.com/d82b58315d.js" crossorigin="anonymous"></script>
+
+    <!---------- google font (montserrat) ----------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- -----------SWIPER JS--------------------------- -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/view.css">
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <!-- NAV -->
+   <nav>
+    <div class="container nav__container">
+        <div class="logoti">
+        <img style="float: left;" src="/images/logoTI.png" alt="logo TI">
+        <a href="index.html"><h4 style=" position: absolute; margin-left: 100%;">INFORMATIKA<br>UNSIA</h4></a>
+        </div>
+        <ul class="nav__menu">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="about.html">Profil</a></li>
+            <li><a onclick="showLoginPopup()">LMS</a></li>
+            <li><a href="courses.html">E-Perpus</a></li>
+            <li><a href="contact.html">Kontak</a></li>
+        </ul>
+        <button id="open-menu-btn"><i class="fa-solid fa-bars"></i></button>
+        <button id="close-menu-btn"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+</nav> 
+<!-- -----------NAV END-------------- -->
+<!-- Login Popup -->
+<!-- Login popup -->
+<div id="loginPopup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="hideLoginPopup()">&times;</span>
+      <h3 style="text-align: center;">MASUK</h3>
+      <br>
+      <form>
+        <label for="username">NIM:</label>
+        <input type="text" id="username" name="username">
+        <br><br>
+        <label for="password">Kata Sandi:</label>
+        <input type="password" id="password" name="password">
+        <br><br>
+        <input type="submit" value="MASUK" onclick="login(event)">
+      </form>
+    </div>
+  </div>
+<!-- end PopUP -->
+<div class="container1">
+    <div class="ebook-list">
+        <h3>Sistem Basis Data</h3>
+        <br>
+        <ul>
+            <!-- list -->
+            <li><a href="/Courses/Basis_data/M1-Pengantar Basis Data.pdf" class="ebook-link">M1 Pengantar Basis Data</a></li>
+            <li><a href="/Courses/Basis_data/M2-Teknik Pencarian Fakta.pdf" class="ebook-link">Teknik Pencarian Fakta</a></li>
+            <li><a href="/Courses/Basis_data/M3-Lingkungan Sistem Basis Data.pdf" class="ebook-link">Lingkungan Sistem Basis Data</a></li>
+            <li><a href="/Courses/Basis_data/M4-FUNCTIONAL DEPEDENCY.pdf" class="ebook-link">Functional Depedency</a></li>
+            <li><a href="/Courses/Basis_data/M5-NORMALISASI.pdf" class="ebook-link">Normalisasi</a></li>
+            <li><a href="/Courses/Basis_data/M6-NormalisasiKedua.pdf" class="ebook-link">Normalisasi 2</a></li>
+            <li><a href="/Courses/Basis_data/Sistem Basis Data - Sesi 7.pdf" class="ebook-link">Normalisai Data</a></li>
+            <li><a href="/Courses/Basis_data/M9-BCNF.pdf" class="ebook-link">BCNF</a></li>
+            <li><a href="/Courses/Basis_data/M10-NORMALISASI 4NF 5NF.pdf" class="ebook-link">Normalisasi 4nf 5Nf</a></li>
+            <li><a href="/Courses/Basis_data/M11-EER.pdf" class="ebook-link">EER</a></li>
+            <li><a href="/Courses/Basis_data/M12-Kardinalitas.pdf" class="ebook-link">Kardinalitas</a></li>
+            <li><a href="/Courses/Basis_data/M13-Hierarcy dan Lattice.pdf" class="ebook-link">Hierarcy dan Lattice</a></li>
+            <li><a href="/Courses/Basis_data/M15-1-PBDFISIKAL.pdf" class="ebook-link">PbdFisikal</a></li>
+            <li><a href="/Courses/Basis_data/M15-2-PBDLOGICAL.pdf" class="ebook-link">PbdLogical</a></li>
+        </ul>
+    </div>
+</div>
+  <!-- FOOTER -->
+<footer class="footer">
+    <div class="container footer__container">
+     <div class="footer__1">
+
+        <a href="index.html" class="footer__logo"><h4>UNIVERSITAS SIBER ASIA</h4></a>
+        <p>
+Universitas Siber Asia adalah Kampus dengan metode Full Online Learning pertama yang menerapkan pembelajaran daring (PJJ).
+        </p>
+     </div>
+
+     <div class="footer__2">
+        <h4>Layanan</h4>
+        <ul class="Permalinks">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="about.html">Profil</a></li>
+            <li><a href="courses.html">LMS</a></li>
+            <li><a href="courses.html">E-Perpus</a></li>
+            <li><a href="contact.html">Kontak</a></li>
+        </ul>
+     </div>
+     <div class="footer__4">
+        <h4>Contact Us</h4>
+        <div>
+           <p>Telp : (021) 278-061-89</p>
+<p>Email : prodi.informatika@mail.unsia.co.id</p>
+        </div>
+
+        <ul class="footer__socials">
+            <li>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+        </ul>
+     </div>
+     <div class="footer__2">
+        <h4>Lokasi</h4>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.735872857361!2d106.81819217485527!3d-6.298397593690734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ed1aea2566fd%3A0xa43a768fbbbd72af!2sUniversitas%20Siber%20Asia%20(UNSIA)!5e0!3m2!1sen!2sid!4v1688665295584!5m2!1sen!2sid" width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </div>
+    </div>
+    <div class="footer__copyright">
+        <small>Copyright &copy; KELOMPOK 7 </small>
+     </div>
+</footer>
+<!-- ------------------------------END OF Footer ------------------------------------------------------ -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="/main.js"></script>
+</body>
+</html>

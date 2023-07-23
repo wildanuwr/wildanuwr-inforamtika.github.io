@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informatika unsia</title>
+    <link rel="icon" href="/images/logoTI.ico" type="image/x-icon">
+
+    <!----------------- fontawesome--------------- -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/view.js"></script>
+    <script src="https://kit.fontawesome.com/d82b58315d.js" crossorigin="anonymous"></script>
+
+    <!---------- google font (montserrat) ----------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- -----------SWIPER JS--------------------------- -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/view.css">
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <!-- NAV -->
+   <nav>
+    <div class="container nav__container">
+        <div class="logoti">
+        <img style="float: left;" src="/images/logoTI.png" alt="logo TI">
+        <a href="index.html"><h4 style=" position: absolute; margin-left: 100%;">INFORMATIKA<br>UNSIA</h4></a>
+        </div>
+        <ul class="nav__menu">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="about.html">Profil</a></li>
+            <li><a onclick="showLoginPopup()">LMS</a></li>
+            <li><a href="courses.html">E-Perpus</a></li>
+            <li><a href="contact.html">Kontak</a></li>
+        </ul>
+        <button id="open-menu-btn"><i class="fa-solid fa-bars"></i></button>
+        <button id="close-menu-btn"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+</nav> 
+<!-- -----------NAV END-------------- -->
+<!-- Login Popup -->
+<!-- Login popup -->
+<div id="loginPopup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="hideLoginPopup()">&times;</span>
+      <h3 style="text-align: center;">MASUK</h3>
+      <br>
+      <form>
+        <label for="username">NIM:</label>
+        <input type="text" id="username" name="username">
+        <br><br>
+        <label for="password">Kata Sandi:</label>
+        <input type="password" id="password" name="password">
+        <br><br>
+        <input type="submit" value="MASUK" onclick="login(event)">
+      </form>
+    </div>
+  </div>
+<!-- end PopUP -->
+<div class="container1">
+    <div class="ebook-list">
+        <h3>Estetika Humanisme</h3>
+        <br>
+        <ul>
+            <!-- list -->
+            <li><a href="/Courses/Estetika/PART 1-EH- EMOSIONAL INTELLIGENCE.pdf" class="ebook-link">Emosional Intelligence</a></li>
+            <li><a href="/Courses/Estetika/Estetika Humanisme Part 2 - Rosanah - 20230411.pdf" class="ebook-link">Personality</a></li>
+            <li><a href="/Courses/Estetika/22928-ID-pembentukan-kepribadian-positif-anak-sejak-usia-dini.pdf" class="ebook-link">Pembentukan Kepribadian Anak Sejak Usia Dini</a></li>
+            <li><a href="/Courses/Estetika/Estetika Humanisme Part 3 - Self Concept - 20230417.pdf" class="ebook-link">Self Concept</a></li>
+            <li><a href="/Courses/Estetika/07410138_Bab_2.pdf" class="ebook-link">Self Concept 2</a></li>
+            <li><a href="/Courses/Estetika/Visi dan Misi Estetika Humanisme Part 4 - 20230426.pdf" class="ebook-link">Visi Dan Misi</a></li>
+            <li><a href="/Courses/Estetika/Estetika Humanisme Part 5 Kecerdasan Emosional - UNSIA - 20230503.pdf" class="ebook-link">Kecerdasan Emosional</a></li>
+            <li><a href="/Courses/Estetika/Part 6 MKU Estetika Humanisme_Mainfulness and Focus - 20230510.pdf" class="ebook-link">Mainfulness dan Focus</a></li>
+            <li><a href="/Courses/Estetika/7. Anger Management Part Ke-7 Estetika Humanisme UNSIA (2).pdf" class="ebook-link">Anger Management</a></li>
+            <li><a href="/Courses/Estetika/Estetika Humanisme Part 9 Building Networking - UNSIA - 20230605.pdf" class="ebook-link">Building Networking</a></li>
+            <li><a href="/Courses/Estetika/ESTETIKA HUMANISME PART 10 CONFLICT MANAGEMENT - 14 Juni s.d 18 Juni 2023 - Rosanah.pdf" class="ebook-link">Conflict Management</a></li>
+            <li><a href="/Courses/Estetika/materi 11 Estetika Humanisme_ _Leadership; Seni dan Gaya Kepemimpinan_UNSIA (1).pdf" class="ebook-link">Leadership seni Dan Gaya Kepemimpinan</a></li>
+            <li><a href="/Courses/Estetika/Modul MKU Estetika Humanisme Part Ke-12 Psikologi Humanistik_UNSIA_20230625.pdf" class="ebook-link">Psikologi Humanistik</a></li>
+            <li><a href="/Courses/Estetika/Estetika Humanisme Sesi 12 (Psikologi Humanistik)_Materi Utama_UNSIA.pdf" class="ebook-link">Psikologi Humanistik 2</a></li>
+            <li><a href="/Courses/Estetika/MKU Estetika Humanisme Part 12_Psikologi Humanistik_UNSIA_20230625.pdf" class="ebook-link">Psikologi Humanistik 3</a></li>
+            <li><a href="/Courses/Estetika/Part 13_ESTETIKA HUMANISME SOCIAL POWER & SOFT POWER_20230705.pdf" class="ebook-link">Social Power dan Soft Power</a></li>
+            <li><a href="/Courses/Estetika/PART 14_INDUSTRY 4.0 & SOCIETY 5.pdf" class="ebook-link">Industri 4.0 dan Society</a></li>
+            <li><a href="/Courses/Estetika/Sesi 14- Industry 4.0 dan Society 5.0_20220629.pdf" class="ebook-link">Industri 4.0 dan Society 2</a></li>
+            <li><a href="/Courses/Estetika/MKU ESTETIKA HUMANISME HOTS and LOTS_Part 15_20220706.pdf" class="ebook-link">Host And Lost</a></li>
+        </ul>
+    </div>
+</div>
+  <!-- FOOTER -->
+<footer class="footer">
+    <div class="container footer__container">
+     <div class="footer__1">
+
+        <a href="index.html" class="footer__logo"><h4>UNIVERSITAS SIBER ASIA</h4></a>
+        <p>
+Universitas Siber Asia adalah Kampus dengan metode Full Online Learning pertama yang menerapkan pembelajaran daring (PJJ).
+        </p>
+     </div>
+
+     <div class="footer__2">
+        <h4>Layanan</h4>
+        <ul class="Permalinks">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="about.html">Profil</a></li>
+            <li><a href="courses.html">LMS</a></li>
+            <li><a href="courses.html">E-Perpus</a></li>
+            <li><a href="contact.html">Kontak</a></li>
+        </ul>
+     </div>
+     <div class="footer__4">
+        <h4>Contact Us</h4>
+        <div>
+           <p>Telp : (021) 278-061-89</p>
+<p>Email : prodi.informatika@mail.unsia.co.id</p>
+        </div>
+
+        <ul class="footer__socials">
+            <li>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+        </ul>
+     </div>
+     <div class="footer__2">
+        <h4>Lokasi</h4>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.735872857361!2d106.81819217485527!3d-6.298397593690734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ed1aea2566fd%3A0xa43a768fbbbd72af!2sUniversitas%20Siber%20Asia%20(UNSIA)!5e0!3m2!1sen!2sid!4v1688665295584!5m2!1sen!2sid" width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </div>
+    </div>
+    <div class="footer__copyright">
+        <small>Copyright &copy; KELOMPOK 7 </small>
+     </div>
+</footer>
+<!-- ------------------------------END OF Footer ------------------------------------------------------ -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="/main.js"></script>
+</body>
+</html>
