@@ -79,9 +79,9 @@ var swiper = new Swiper(".mySwiper", {
     var password = document.getElementById("password").value;
     
     // login validation
-    if (username === "123456789" && password === "123456") {
+    if (username === "1234" && password === "1234") {
       hideLoginPopup();
-      window.location.href ="../courses.html";
+      window.location.href ="/courses.html";
     } else {
       alert("Username atau Kata Sandi Salah.");
     }

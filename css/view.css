@@ -10,7 +10,6 @@
     flex: 1;
     margin-left: -25%;
     margin-top: 15%;
-    margin-bottom: 30%;
 }
 
 .ebook-list ul {
@@ -19,7 +18,8 @@
 }
 
 .ebook-list li {
-    margin-bottom: 10px;
+    list-style-type: disc;
+    margin-bottom: 2px;
 }
 
 .file-preview {
@@ -55,7 +55,7 @@
     align-items: center;
 }
 
-.popup-content {
+.popup-content1 {
     position: relative;
     width: 800px;
     height: fit-content;
