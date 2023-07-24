@@ -37,7 +37,7 @@
             <ul class="nav__menu">
                 <li><a href="index.html">Beranda</a></li>
                 <li><a href="about.html">Profil</a></li>
-                <li><a onclick="showLoginPopup()">LMS</a></li>
+                <li><a href="#" onclick="showLoginPopup()">LMS</a></li>
                 <li><a href="courses.html">E-Perpus</a></li>
                 <li><a href="contact.html">Kontak</a></li>
             </ul>
@@ -46,8 +46,23 @@
         </div>
    </nav> 
    <!-- -----------NAV END-------------- -->
-
-   
+   <!-- Login popup -->
+   <div id="loginPopup" class="popup">
+     <div class="popup-content">
+       <span class="close" onclick="hideLoginPopup()">&times;</span>
+       <h3 style="text-align: center;">MASUK</h3>
+       <br>
+       <form>
+         <label for="username">NIM:</label>
+         <input type="text" id="username" name="username">
+         <br><br>
+         <label for="password">Kata Sandi:</label>
+         <input type="password" id="password" name="password">
+         <br><br>
+         <input type="submit" value="MASUK" onclick="login(event)">
+       </form>
+     </div>
+   </div>
 <!-- COURSES -->
 <section class="courses">
     <h2>MATERI PEMBELAJARAN ONLINE</h2>
@@ -87,7 +102,7 @@
              <P>
                 "Kode yang Menginspirasi, Tampilan yang Mengagumkan: Pemrograman Web Mengubah Ide menjadi Realitas Online"
              </P>
-            <a href="courses.html" class="btn btn-primary">Baca</a>
+            <a href="/Courses/Pemrogaman_Web/Pemrograman.html" class="btn btn-primary">Baca</a>
          </div>
     </article>
 

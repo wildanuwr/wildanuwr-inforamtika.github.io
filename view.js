@@ -6,7 +6,7 @@ $(document).ready(function() {
         var popupContent = '<iframe id="pdf-viewer" src="' + ebookUrl + '" frameborder="0"></iframe>';
 
         var popupContainer = $('<div class="popup-container"></div>');
-        var popupContentWrapper = $('<div class="popup-content"></div>');
+        var popupContentWrapper = $('<div class="popup-content1"></div>');
         popupContentWrapper.html(popupContent);
         popupContainer.append(popupContentWrapper);
 
@@ -15,5 +15,6 @@ $(document).ready(function() {
         popupContainer.click(function() {
             $(this).remove();
         });
+        
     });
 });
