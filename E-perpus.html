@@ -1,0 +1,288 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informatika unsia</title>
+    <link rel="icon" href="images/logoTI.ico" type="image/x-icon">
+
+    <!----------------- fontawesome--------------- -->
+    <script src="https://kit.fontawesome.com/d82b58315d.js" crossorigin="anonymous"></script>
+
+    <!---------- google font (montserrat) ----------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- -----------SWIPER JS--------------------------- -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/perpus.css">
+</head>
+<body>
+     <!-- NAV -->
+   <nav>
+    <div class="container nav__container">
+        <div class="logoti">
+        <img style="float: left;" src="images/logoTI.png" alt="logo TI">
+        <a href="index.html"><h4 style=" position: absolute; margin-left: 100%;">INFORMATIKA<br>UNSIA</h4></a>
+        </div>
+        <ul class="nav__menu">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="about.html">Profil</a></li>
+            <li><a href="#" onclick="showLoginPopup()">LMS</a></li>
+            <li><a href="courses.html">E-Perpus</a></li>
+            <li><a href="contact.html">Kontak</a></li>
+        </ul>
+        <button id="open-menu-btn"><i class="fa-solid fa-bars"></i></button>
+        <button id="close-menu-btn"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+</nav> 
+<!-- -----------NAV END-------------- -->
+
+<!-- Login popup -->
+<div id="loginPopup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="hideLoginPopup()">&times;</span>
+      <h3 style="text-align: center;">MASUK</h3>
+      <br>
+      <form>
+        <label for="username">NIM:</label>
+        <input type="text" id="username" name="username">
+        <br><br>
+        <label for="password">Kata Sandi:</label>
+        <input type="password" id="password" name="password">
+        <br><br>
+        <input type="submit" value="MASUK" onclick="login(event)">
+      </form>
+    </div>
+  </div>
+</div>
+
+<main>
+    <section class="bookshelf">
+      <div class="book">
+        <div class="book-thumbnail">
+          <canvas id="pdfCanvas1"></canvas>
+          <div class="loading">Loading...</div>
+        </div>
+        <h3>C# For Pentest</h3>
+        <p>Author: Joas Antonio</p>
+        <p>Published: 2023</p>
+        <a href="perpus/C_PenTest.pdf" target="_blank" class="btn-read-pdf">Read PDF</a>
+      </div>
+
+      <div class="book">
+        <div class="book-thumbnail">
+          <canvas id="pdfCanvas2"></canvas>
+          <div class="loading">Loading...</div>
+        </div>
+        <h3>Bypassing Layers</h3>
+        <p>Author: Joas Antonio</p>
+        <p>Published: 2023</p>
+        <a href="perpus/Bypassing_layers.pdf" target="_blank" class="btn-read-pdf">Read PDF</a>
+      </div>
+
+      <div class="book">
+        <div class="book-thumbnail">
+          <canvas id="pdfCanvas3"></canvas>
+          <div class="loading">Loading...</div>
+        </div>
+        <h3>CSSNotes for Professionals</h3>
+        <p>Author: Goalclicker</p>
+        <p>Published: 2023</p>
+        <a href="/perpus/FRONT END/CSS Notes For Pros.pdf" target="_blank" class="btn-read-pdf">Read PDF</a>
+      </div>
+
+      <div class="book">
+        <div class="book-thumbnail">
+          <canvas id="pdfCanvas4"></canvas>
+          <div class="loading">Loading...</div>
+        </div>
+        <h3>Getting to Know Vue.js</h3>
+        <p>Author: Brett Nelson</p>
+        <p>Published: 2023</p>
+        <a href="perpus\FRONT END\Getting to Know Vue js.pdf" target="_blank" class="btn-read-pdf">Read PDF</a>
+      </div>
+
+      <div class="book">
+        <div class="book-thumbnail">
+          <canvas id="pdfCanvas5"></canvas>
+          <div class="loading">Loading...</div>
+        </div>
+        <h3>SQL database</h3>
+        <p>Author: A Wiley Brand</p>
+        <p>Published: 2023</p>
+        <a href="perpus\FRONT END\SQL Database.pdf" target="_blank" class="btn-read-pdf">Read PDF</a>
+      </div>
+
+      <div class="book">
+        <div class="book-thumbnail">
+          <canvas id="pdfCanvas6"></canvas>
+          <div class="loading">Loading...</div>
+        </div>
+        <h3>Fundamentals Python</h3>
+        <p>Author: Richard L</p>
+        <p>Published: 2023</p>
+        <a href="perpus\PYTHON\Fundamentals Python .pdf" target="_blank" class="btn-read-pdf">Read PDF</a>
+      </div>
+
+      <div class="book">
+        <div class="book-thumbnail">
+          <canvas id="pdfCanvas7"></canvas>
+          <div class="loading">Loading...</div>
+        </div>
+        <h3>Learning Python Design</h3>
+        <p>Author: Gennady Zlobin</p>
+        <p>Published: 2023</p>
+        <a href="perpus\PYTHON\Learning Python Design Patterns .pdf" target="_blank" class="btn-read-pdf">Read PDF</a>
+      </div>
+
+      <div class="book">
+        <div class="book-thumbnail">
+          <canvas id="pdfCanvas8"></canvas>
+          <div class="loading">Loading...</div>
+        </div>
+        <h3>Python Programing</h3>
+        <p>Author: Tutorialspoin</p>
+        <p>Published: 2023</p>
+        <a href="perpus\PYTHON\Python Programming .pdf" target="_blank" class="btn-read-pdf">Read PDF</a>
+      </div>
+
+      <div class="book">
+        <div class="book-thumbnail">
+          <canvas id="pdfCanvas9"></canvas>
+          <div class="loading">Loading...</div>
+        </div>
+        <h3>Learning Bostrap</h3>
+        <p>Author: Arafin Senoy</p>
+        <p>Published: 2023</p>
+        <a href="perpus\FRONT END\Learning Bootstrap.pdf" target="_blank" class="btn-read-pdf">Read PDF</a>
+      </div>
+
+      <div class="book">
+        <div class="book-thumbnail">
+          <canvas id="pdfCanvas10"></canvas>
+          <div class="loading">Loading...</div>
+        </div>
+        <h3>Microsoft Sql Server 2012</h3>
+        <p>Author: Ross Mistry</p>
+        <p>Published: 2023</p>
+        <a href="perpus\DATABASES\Microsoft SQL Server 2012.pdf" target="_blank" class="btn-read-pdf">Read PDF</a>
+      </div>
+
+      <div class="book">
+        <div class="book-thumbnail">
+          <canvas id="pdfCanvas11"></canvas>
+          <div class="loading">Loading...</div>
+        </div>
+        <h3>Oracle Database Book</h3>
+        <p>Author: Oracle</p>
+        <p>Published: 2023</p>
+        <a href="perpus\DATABASES\Oracle Database book.pdf" target="_blank" class="btn-read-pdf">Read PDF</a>
+      </div>
+
+      <div class="book">
+        <div class="book-thumbnail">
+          <canvas id="pdfCanvas12"></canvas>
+          <div class="loading">Loading...</div>
+        </div>
+        <h3>PHP and MYSQL</h3>
+        <p>Author: Janet Valade</p>
+        <p>Published: 2023</p>
+        <a href="perpus\BACK END\PHP And MySQL.pdf" target="_blank" class="btn-read-pdf">Read PDF</a>
+      </div>
+
+      <div class="book">
+        <div class="book-thumbnail">
+          <canvas id="pdfCanvas13"></canvas>
+          <div class="loading">Loading...</div>
+        </div>
+        <h3>Laravel Fremwork</h3>
+        <p>Author: Matt Stauffer</p>
+        <p>Published: 2023</p>
+        <a href="perpus\BACK END\Laravel framework.pdf" target="_blank" class="btn-read-pdf">Read PDF</a>
+      </div>
+
+      <div class="book">
+        <div class="book-thumbnail">
+          <canvas id="pdfCanvas14"></canvas>
+          <div class="loading">Loading...</div>
+        </div>
+        <h3>Ajax Programing</h3>
+        <p>Author: Stave Holzner</p>
+        <p>Published: 2023</p>
+        <a href="perpus\BACK END\Ajax Programming.pdf" target="_blank" class="btn-read-pdf">Read PDF</a>
+      </div>
+
+      <div class="book">
+        <div class="book-thumbnail">
+          <canvas id="pdfCanvas15"></canvas>
+          <div class="loading">Loading...</div>
+        </div>
+        <h3>Fundamentals Csharp</h3>
+        <p>Author: Svetlin Nakov</p>
+        <p>Published: 2023</p>
+        <a href="perpus\C#\Fundamentals  Csharp.pdf" target="_blank" class="btn-read-pdf">Read PDF</a>
+      </div>
+      <!-- Add more books here -->
+    </section>
+   </main>
+
+ <!-- -------------------------FOOTER------------------------------- -->
+<footer class="footer">
+    <div class="container footer__container">
+     <div class="footer__1">
+
+        <a href="index.html" class="footer__logo"><h4>UNIVERSITAS SIBER ASIA</h4></a>
+        <p>
+Universitas Siber Asia adalah Kampus dengan metode Full Online Learning pertama yang menerapkan pembelajaran daring (PJJ).
+        </p>
+     </div>
+
+     <div class="footer__2">
+        <h4>Layanan</h4>
+        <ul class="Permalinks">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="about.html">Profil</a></li>
+            <li><a href="courses.html">LMS</a></li>
+            <li><a href="courses.html">E-Perpus</a></li>
+            <li><a href="contact.html">Kontak</a></li>
+        </ul>
+     </div>
+     <div class="footer__4">
+        <h4>Contact Us</h4>
+        <div>
+           <p>Telp : (021) 278-061-89</p>
+<p>Email : prodi.informatika@mail.unsia.co.id</p>
+        </div>
+
+        <ul class="footer__socials">
+            <li>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+        </ul>
+     </div>
+     <div class="footer__2">
+        <h4>Lokasi</h4>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.735872857361!2d106.81819217485527!3d-6.298397593690734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ed1aea2566fd%3A0xa43a768fbbbd72af!2sUniversitas%20Siber%20Asia%20(UNSIA)!5e0!3m2!1sen!2sid!4v1688665295584!5m2!1sen!2sid" width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </div>
+    </div>
+    <div class="footer__copyright">
+        <small>Copyright &copy; KELOMPOK 7 </small>
+     </div>
+</footer>
+
+  <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+  <script src="e-perpus.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
