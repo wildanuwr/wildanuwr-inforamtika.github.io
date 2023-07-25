@@ -1,6 +1,5 @@
 {
-    "capabilities": {
-      "virtualWorkspaces": true
-    }
+  "capabilities": {
+    "virtualWorkspaces": true | false
   }
-  
+}
