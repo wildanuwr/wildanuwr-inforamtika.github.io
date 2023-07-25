@@ -3,3 +3,8 @@
         "ritwickdey.liveserver"
     ]
 }
+{
+    "capabilities": {
+      "virtualWorkspaces": false
+    }
+  }
