@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Learning unsia 2022/2023</title>
+    <title>Informatika unsia</title>
+    <link rel="icon" href="images/logoTI.ico" type="image/x-icon">
 
     <!----------------- fontawesome--------------- -->
     <script src="https://kit.fontawesome.com/d82b58315d.js" crossorigin="anonymous"></script>
@@ -34,7 +35,7 @@
             <ul class="nav__menu">
                 <li><a href="index.html">Beranda</a></li>
                 <li><a href="about.html">Profil</a></li>
-                <li><a onclick="showLoginPopup()">LMS</a></li>
+                <li><a href="#" onclick="showLoginPopup()">LMS</a></li>
                 <li><a href="courses.html">E-Perpus</a></li>
                 <li><a href="contact.html">Kontak</a></li>
             </ul>
@@ -44,6 +45,24 @@
    </nav> 
    <!-- --------------------------NAV END------------------------------ -->
 
+<!-- Login popup -->
+<div id="loginPopup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="hideLoginPopup()">&times;</span>
+      <h3 style="text-align: center;">MASUK</h3>
+      <br>
+      <form>
+        <label for="username">NIM:</label>
+        <input type="text" id="username" name="username">
+        <br><br>
+        <label for="password">Kata Sandi:</label>
+        <input type="password" id="password" name="password">
+        <br><br>
+        <input type="submit" value="MASUK" onclick="login(event)">
+      </form>
+    </div>
+  </div>
+<!-- Login popup end-->
 
 
    <!-- --------------------------PROFIL INFORMATIKA------------------------------ -->
