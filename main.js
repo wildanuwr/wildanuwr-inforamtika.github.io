@@ -81,7 +81,7 @@ var swiper = new Swiper(".mySwiper", {
     // login validation
     if (username === "1234" && password === "1234") {
       hideLoginPopup();
-      window.location.href ="E-LEARNING-UNISA/courses.html";
+      window.location.href ="/E-LEARNING-UNISA/courses.html";
     } else {
       alert("Username atau Kata Sandi Salah.");
     }
