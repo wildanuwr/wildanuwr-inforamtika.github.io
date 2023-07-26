@@ -5,12 +5,19 @@
 
 .about__achievements-container {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 70% 90%;
     gap: 5rem;
 }
 
+.about__achievements-right {
+    position: absolute;
+    margin-left: 60%;
+
+}
 .about__achievements-right > p {
-   margin: 1.6rem 0 2.5rem;
+   margin-left: -20%;
+   margin-right: -20%;
+   position: absolute;
 }
 
 video {
@@ -142,8 +149,9 @@ video {
     }
 
     .about__achievements-left {
-        width: 80%;
-        margin: 0 auto;
+        margin-left: 10%;
+        margin-right: 50%;
+        margin-top: 25px;
     }
 
     .team__container {
