@@ -131,7 +131,7 @@ video {
 
 /* =================================MEDIA QUERIES (TABLETS)============================ */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1366px) {
     .about__achievements {
         margin-top: 2rem;
     }
