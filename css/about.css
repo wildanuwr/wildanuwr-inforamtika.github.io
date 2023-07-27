@@ -22,8 +22,8 @@
 
 /* -------header container 1------- */
 .container1 {
-    width: var(--container-width-lg);
-    margin: 0 auto;
+    width: 100%;
+    margin: 10px 10px 10px 10px;
 }
 
 .header__container1 {
@@ -46,16 +46,25 @@
     text-align: center;
     margin-top: 0;
 }
+.header__left1{
+    width: 60%;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 30px;
+}   
 
-.header__left p {
-    margin-bottom: 1.3rem;
-    margin: 1rem 0 2.4rem;
+.header__left1 p {
+    height: 50%;
+    width: 70%;
+    margin-left: 0px;
+    position: relative;
 }
+.header__right1{
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 40px;
 
-/* .header__left p {
-    
-} */
-
+}
 
 /* ==================TUJUAN=================== */
 .about__tujuan {
