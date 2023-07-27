@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'perpus/BACK END/PHP And MySQL.pdf',
     'perpus/BACK END/Laravel framework.pdf',
     'perpus/BACK END/Ajax Programming.pdf',
-    'perpus/C#/Fundamentals  Csharp.pdf',
+    'perpus/C#/Fundamentals Csharp.pdf',
   ];
 
   bookUrls.forEach((url, index) => {
