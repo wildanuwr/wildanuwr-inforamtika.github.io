@@ -61,7 +61,8 @@
 <div class="container fromkontak">
 <h1>Kontak</h1>
 <br>
-<form action="proses.php" method="POST">
+<form name="submit-to-google-sheet">
+
     <label for="nama">Nama:</label><br>
     <input type="text" id="nama" name="nama" required><br><br>
     
@@ -73,6 +74,7 @@
     
     <input type="submit" value="Kirim">
 </form>
+<span id="msg"></span>
 </div>
   <!-- FOOTER -->
 <footer class="footer">
@@ -128,6 +130,24 @@ Universitas Siber Asia adalah Kampus dengan metode Full Online Learning pertama 
 </footer>
 <!-- ------------------------------END OF Footer ------------------------------------------------------ -->
 
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwRERZfCpeYEOdYScIpwen9EiGnER8hrhNaD1bXUP7lPIVj1egMae7DDRUKUwcyJnDF/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully bruh"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="./main.js"></script>
 </body>
